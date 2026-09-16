@@ -4,13 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saad Tariq — Full-Stack Software Engineer</title>
-  <meta name="description" content="Portfolio of Saad Tariq, Full-Stack Software Engineer specializing in SaaS applications, secure backend systems, real-time applications, and practical AI integrations." />
+  <meta name="description" content="Portfolio of Saad Tariq, a full-stack software engineer building SaaS products, backend systems, real-time applications, and practical AI integrations." />
+  <meta name="theme-color" content="#090d16" />
 
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Saad Tariq — Full-Stack Software Engineer" />
-  <meta property="og:description" content="I build full-stack SaaS products, secure backend systems, real-time applications, and practical AI integrations." />
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://saad-portfolio-sigma.vercel.app/" />
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://saad-portfolio-sigma.vercel.app/" />
+  <meta property="og:title" content="Saad Tariq — Full-Stack Software Engineer" />
+  <meta property="og:description" content="Portfolio of Saad Tariq, a full-stack software engineer building SaaS products, backend systems, real-time applications, and practical AI integrations." />
+  <meta property="og:image" content="https://saad-portfolio-sigma.vercel.app/images/aisaas.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://saad-portfolio-sigma.vercel.app/" />
+  <meta name="twitter:title" content="Saad Tariq — Full-Stack Software Engineer" />
+  <meta name="twitter:description" content="Portfolio of Saad Tariq, a full-stack software engineer building SaaS products, backend systems, real-time applications, and practical AI integrations." />
+  <meta name="twitter:image" content="https://saad-portfolio-sigma.vercel.app/images/aisaas.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +40,7 @@
 </div>
 
 <!-- NAVBAR -->
-<nav>
+<nav aria-label="Main Navigation">
   <div class="nav-inner">
     <a href="#hero" class="nav-brand">
       <span class="brand-accent">&lt;</span>Saad Tariq<span class="brand-accent"> /&gt;</span>
@@ -43,7 +55,7 @@
     </ul>
     <div class="nav-actions">
       <a href="#contact" class="nav-hire">Hire Me</a>
-      <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+      <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
     </div>
@@ -61,7 +73,7 @@
 <main>
   <!-- HERO -->
   <section id="hero">
-    <canvas id="particle-canvas"></canvas>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
     <div class="hero-glow-1"></div>
     <div class="hero-glow-2"></div>
     <div class="hero-content">
@@ -85,15 +97,15 @@
           <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
         <div class="hero-supporting-actions">
-          <a href="./Saad-Tariq-Resume.pdf" download="Saad-Tariq-Resume.pdf" class="btn-action" title="Download Resume">
+          <a href="./Saad-Tariq-Resume.pdf" target="_blank" rel="noopener noreferrer" download="Saad-Tariq-Resume.pdf" class="btn-action" title="Download Resume">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             <span>Resume</span>
           </a>
-          <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="btn-action" title="GitHub Profile">
+          <a href="https://github.com/SaadMwa" target="_blank" rel="noopener noreferrer" class="btn-action" title="GitHub Profile">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
             <span>GitHub</span>
           </a>
-          <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noreferrer" class="btn-action" title="LinkedIn Profile">
+          <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noopener noreferrer" class="btn-action" title="LinkedIn Profile">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             <span>LinkedIn</span>
           </a>
@@ -110,7 +122,7 @@
           <div class="cred-icon">⚡</div>
           <div class="cred-content">
             <h4>Production Development</h4>
-            <p>Extended REST APIs, PostgreSQL schemas, and containerized Docker CI workflows.</p>
+            <p>Extended REST APIs, PostgreSQL schemas, unit tests, and containerized Docker CI workflows.</p>
           </div>
         </div>
         <div class="cred-card">
@@ -131,7 +143,7 @@
           <div class="cred-icon">📡</div>
           <div class="cred-content">
             <h4>Real-Time & Offline Systems</h4>
-            <p>WebSockets, WebRTC signaling, BullMQ background queues & IndexedDB offline sync.</p>
+            <p>WebSockets, WebRTC signaling, BullMQ background queues & IndexedDB offline persistence.</p>
           </div>
         </div>
       </div>
@@ -228,14 +240,14 @@
         <!-- PROJECT 1: VidaAI -->
         <article class="project-card card-flagship reveal">
           <div class="card-image-wrap">
-            <img src="https://i.postimg.cc/rsdfHLk3/Capture.png" alt="VidaAI AI Assessment Creator screenshot" loading="lazy">
+            <img src="https://i.postimg.cc/rsdfHLk3/Capture.png" alt="VidaAI AI Assessment Creator question paper generation interface dashboard" loading="lazy">
             <div class="card-badge-overlay">
               <span class="badge badge-indep">INDEPENDENT</span>
             </div>
           </div>
           <div class="card-body">
             <h3 class="card-title">VidaAI — AI Assessment Creator</h3>
-            <p class="card-summary">Engineered an AI-powered question paper generator for teachers featuring background queue execution, real-time socket progress, and Gemini API prompt pipelines.</p>
+            <p class="card-summary">AI-powered question paper generator for teachers using Next.js, TypeScript, Express, BullMQ, Redis, WebSockets, and Gemini API. Processes paper generation asynchronously in approximately 15 seconds with real-time progress updates.</p>
 
             <div class="card-spec-grid">
               <div class="spec-item">
@@ -244,7 +256,7 @@
               </div>
               <div class="spec-item">
                 <span class="spec-label">SOLUTION</span>
-                <span class="spec-value">Asynchronous AI generator processing paper creation with real-time feedback.</span>
+                <span class="spec-value">Asynchronous AI generator processing paper creation with real-time feedback queues.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-label">MY CONTRIBUTION</span>
@@ -252,7 +264,7 @@
               </div>
               <div class="spec-item spec-highlight">
                 <span class="spec-label">ENGINEERING HIGHLIGHT</span>
-                <span class="spec-value">BullMQ + Redis background worker completes paper generation in ~15s without blocking HTTP threads, broadcasting live progress via WebSockets.</span>
+                <span class="spec-value">BullMQ + Redis background worker completes paper generation in approximately 15s without blocking HTTP threads, broadcasting live progress via WebSockets.</span>
               </div>
             </div>
 
@@ -267,8 +279,8 @@
             </div>
 
             <div class="card-actions">
-              <a href="https://drive.google.com/file/d/1Yo-t9cwfGlr9FIYwv1H_dPck1BhtAsFB/view" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-              <a href="https://github.com/SaadMwa/Vida_AI-" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+              <a href="https://drive.google.com/file/d/1Yo-t9cwfGlr9FIYwv1H_dPck1BhtAsFB/view" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/Vida_AI-" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-github">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
                 GitHub Code
               </a>
@@ -279,14 +291,14 @@
         <!-- PROJECT 2: AI-Powered Store Management System -->
         <article class="project-card card-flagship reveal">
           <div class="card-image-wrap">
-            <img src="./images/aisaas.PNG" alt="AI-Powered Store Management System dashboard screenshot" loading="lazy">
+            <img src="./images/aisaas.png" alt="AI-Powered Store Management System analytics dashboard screenshot" loading="lazy">
             <div class="card-badge-overlay">
-              <span class="badge badge-prof">PROFESSIONAL</span>
+              <span class="badge badge-indep">INDEPENDENT</span>
             </div>
           </div>
           <div class="card-body">
             <h3 class="card-title">AI-Powered Store Management System</h3>
-            <p class="card-summary">A production-grade SaaS platform where store owners manage inventory, customers, and sales via natural language command execution.</p>
+            <p class="card-summary">A full-stack SaaS platform where store owners manage inventory, customers, and sales via natural language command execution.</p>
 
             <div class="card-spec-grid">
               <div class="spec-item">
@@ -303,7 +315,7 @@
               </div>
               <div class="spec-item spec-highlight">
                 <span class="spec-label">ENGINEERING HIGHLIGHT</span>
-                <span class="spec-value">Natural language command parser translating commands ('add 5 chairs at $50') into verified CRUD database operations within ~3 seconds.</span>
+                <span class="spec-value">Natural language command parser executing verified CRUD database operations in approximately 3 seconds.</span>
               </div>
             </div>
 
@@ -317,12 +329,12 @@
             </div>
 
             <div class="card-actions">
-              <a href="https://ai-saa-s-business-management-fronte.vercel.app/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-              <a href="https://github.com/SaadMwa/AI-SaaS-Business-Management-Frontend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+              <a href="https://ai-saa-s-business-management-fronte.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/AI-SaaS-Business-Management-Frontend" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-github">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
                 Frontend Repo
               </a>
-              <a href="https://github.com/SaadMwa/AI-SaaS-Business-Management-Backend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+              <a href="https://github.com/SaadMwa/AI-SaaS-Business-Management-Backend" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-github">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
                 Backend Repo
               </a>
@@ -345,12 +357,12 @@
           </div>
           <div class="card-body">
             <h3 class="card-title">University CMS and Website</h3>
-            <p class="card-summary">Converted a static university website into a dynamic full-stack platform with a central administrative CMS dashboard.</p>
+            <p class="card-summary">Converted a static university website into a full-stack platform with a Next.js frontend, Node/Express backend, MySQL database, and CMS dashboard for managing content, announcements, faculty listings, and media.</p>
 
             <div class="card-spec-grid">
               <div class="spec-item">
                 <span class="spec-label">PROBLEM</span>
-                <span class="spec-value">Legacy static web pages lacked dynamic content control, announcement updates, and faculty directories.</span>
+                <span class="spec-value">Legacy static web pages lacked central content control, department announcements, and faculty listing updates.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-label">SOLUTION</span>
@@ -358,11 +370,11 @@
               </div>
               <div class="spec-item">
                 <span class="spec-label">MY CONTRIBUTION</span>
-                <span class="spec-value">Architected Next.js page structure, Express REST endpoints, MySQL relational schema design, and role-based admin management dashboard.</span>
+                <span class="spec-value">Architected Next.js page structure, Express REST endpoints, MySQL relational schema design, and admin management dashboard.</span>
               </div>
               <div class="spec-item spec-highlight">
                 <span class="spec-label">ENGINEERING HIGHLIGHT</span>
-                <span class="spec-value">Static-to-dynamic migration replacing hardcoded files with relational database models and secure CMS publishing flows.</span>
+                <span class="spec-value">Static-to-dynamic migration replacing hardcoded files with relational database models and CMS publishing workflows.</span>
               </div>
             </div>
 
@@ -395,7 +407,7 @@
           </div>
           <div class="card-body">
             <h3 class="card-title">ConnectHub — Video Calling Platform</h3>
-            <p class="card-summary">Real-time peer-to-peer video conferencing platform with WebSockets, WebRTC mesh signaling, and secure token session rotation.</p>
+            <p class="card-summary">Real-time peer-to-peer video calling platform built with WebRTC and Socket.io for peer signaling, TypeScript, and session authentication.</p>
 
             <div class="card-spec-grid">
               <div class="spec-item">
@@ -404,15 +416,15 @@
               </div>
               <div class="spec-item">
                 <span class="spec-label">SOLUTION</span>
-                <span class="spec-value">High-performance WebRTC video streaming platform backed by Socket.io signaling and strict schema validation.</span>
+                <span class="spec-value">WebRTC video streaming platform backed by Socket.io signaling and structured request validation.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-label">MY CONTRIBUTION</span>
-                <span class="spec-value">Built WebRTC peer connection protocol, Socket.io signaling server, Zod payload validation layer, and JWT refresh-token rotation.</span>
+                <span class="spec-value">Built WebRTC peer connection protocol, Socket.io signaling layer, input validation, and JWT session authentication.</span>
               </div>
               <div class="spec-item spec-highlight">
                 <span class="spec-label">ENGINEERING HIGHLIGHT</span>
-                <span class="spec-value">WebRTC P2P signaling with Socket.io fallback, type-safe Zod runtime checks, and JWT token rotation for long-lived secure calls.</span>
+                <span class="spec-value">Peer-to-peer WebRTC video stream signaling paired with WebSocket event handlers for low-latency session management.</span>
               </div>
             </div>
 
@@ -420,16 +432,13 @@
               <span class="tag">WebRTC</span>
               <span class="tag">Socket.io</span>
               <span class="tag">TypeScript</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Zod</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
               <span class="tag">JWT Auth</span>
             </div>
 
             <div class="card-actions">
-              <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-                GitHub Profile
-              </a>
+              <span class="card-note-badge">Private repository — demonstration available upon request</span>
             </div>
           </div>
         </article>
@@ -437,31 +446,31 @@
         <!-- PROJECT 5: Client Manager -->
         <article class="project-card card-flagship reveal">
           <div class="card-image-wrap">
-            <img src="./images/cleint.PNG" alt="Client Manager analytics dashboard screenshot" loading="lazy">
+            <img src="./images/client.png" alt="Client Manager analytics dashboard screenshot" loading="lazy">
             <div class="card-badge-overlay">
-              <span class="badge badge-prof">PROFESSIONAL</span>
+              <span class="badge badge-indep">INDEPENDENT</span>
             </div>
           </div>
           <div class="card-body">
             <h3 class="card-title">Client Manager</h3>
-            <p class="card-summary">Full-stack client and project management suite featuring AI financial insights, paginated query handling, and analytics charts.</p>
+            <p class="card-summary">Full-stack freelancer client and project tracking application built with the MERN stack, featuring client management, authentication, pagination, and data visualization dashboards.</p>
 
             <div class="card-spec-grid">
               <div class="spec-item">
                 <span class="spec-label">PROBLEM</span>
-                <span class="spec-value">Freelancers and small teams lack centralized tracking for client invoicing, status, and revenue analytics.</span>
+                <span class="spec-value">Freelancers and small teams lack centralized tracking for client invoicing, project status, and revenue reporting.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-label">SOLUTION</span>
-                <span class="spec-value">Integrated MERN application with automated financial analytics and responsive client dashboards.</span>
+                <span class="spec-value">Integrated MERN application with client data tracking and responsive analytics dashboards.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-label">MY CONTRIBUTION</span>
-                <span class="spec-value">Developed full MERN architecture, JWT authentication layer, server-side pagination, and Chart.js reporting.</span>
+                <span class="spec-value">Developed full MERN architecture, JWT authentication layer, server-side pagination, and Chart.js reporting dashboards.</span>
               </div>
               <div class="spec-item spec-highlight">
                 <span class="spec-label">ENGINEERING HIGHLIGHT</span>
-                <span class="spec-value">Optimized MongoDB aggregation pipelines and paginated dataset queries for fast dashboard load times.</span>
+                <span class="spec-value">MongoDB dataset querying and server-side paginated queries for responsive dashboard load times.</span>
               </div>
             </div>
 
@@ -469,18 +478,17 @@
               <span class="tag">MERN Stack</span>
               <span class="tag">JWT Auth</span>
               <span class="tag">MongoDB</span>
-              <span class="tag">AI Insights</span>
               <span class="tag">Pagination</span>
-              <span class="tag">Charts</span>
+              <span class="tag">Chart.js</span>
             </div>
 
             <div class="card-actions">
-              <a href="https://client-manager-frontend-vwyz.vercel.app" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-              <a href="https://github.com/SaadMwa/ClientManager-frontend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+              <a href="https://client-manager-frontend-vwyz.vercel.app" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/ClientManager-frontend" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-github">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
                 Frontend Repo
               </a>
-              <a href="https://github.com/SaadMwa/ClientManager-Backend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+              <a href="https://github.com/SaadMwa/ClientManager-Backend" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-github">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
                 Backend Repo
               </a>
@@ -491,14 +499,14 @@
         <!-- PROJECT 6: SyncNotes -->
         <article class="project-card card-flagship reveal">
           <div class="card-image-wrap">
-            <img src="./images/syncnotes.PNG" alt="SyncNotes offline notes app screenshot" loading="lazy">
+            <img src="./images/syncnotes.png" alt="SyncNotes offline notes web application screenshot" loading="lazy">
             <div class="card-badge-overlay">
               <span class="badge badge-indep">INDEPENDENT</span>
             </div>
           </div>
           <div class="card-body">
             <h3 class="card-title">SyncNotes</h3>
-            <p class="card-summary">Offline-first web notes application with local browser database persistence and automatic cloud synchronization on reconnection.</p>
+            <p class="card-summary">An offline-first notes application using IndexedDB for local persistence, allowing users to create and manage notes without an active internet connection.</p>
 
             <div class="card-spec-grid">
               <div class="spec-item">
@@ -507,15 +515,15 @@
               </div>
               <div class="spec-item">
                 <span class="spec-label">SOLUTION</span>
-                <span class="spec-value">Offline-first database architecture guaranteeing 100% functionality without active internet access.</span>
+                <span class="spec-value">Offline-first database architecture allowing continuous operation without internet connectivity.</span>
               </div>
               <div class="spec-item">
                 <span class="spec-label">MY CONTRIBUTION</span>
-                <span class="spec-value">Architected local database layer using IndexedDB, connection status monitoring, and background sync queues.</span>
+                <span class="spec-value">Architected client-side storage adapter using IndexedDB and structured React components.</span>
               </div>
               <div class="spec-item spec-highlight">
                 <span class="spec-label">ENGINEERING HIGHLIGHT</span>
-                <span class="spec-value">Client-side IndexedDB database layer for zero-latency local operations and automatic background reconciliation on network recovery.</span>
+                <span class="spec-value">Client-side IndexedDB browser storage layer ensuring local data operations function independently of network availability.</span>
               </div>
             </div>
 
@@ -527,8 +535,8 @@
             </div>
 
             <div class="card-actions">
-              <a href="https://syncnotes-omega.vercel.app/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-              <a href="https://github.com/SaadMwa/syncnotes" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+              <a href="https://syncnotes-omega.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/syncnotes" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-github">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
                 GitHub Code
               </a>
@@ -557,8 +565,8 @@
               <span class="tag">JavaScript</span>
             </div>
             <div class="card-actions">
-              <a href="https://saadmwa.github.io/bill-splitter-webapp-saad/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-              <a href="https://github.com/SaadMwa/bill-splitter-webapp-saad.git" target="_blank" rel="noreferrer" class="card-btn card-btn-github">GitHub</a>
+              <a href="https://saadmwa.github.io/bill-splitter-webapp-saad/" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/bill-splitter-webapp-saad.git" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-github">GitHub</a>
             </div>
           </article>
 
@@ -576,8 +584,8 @@
               <span class="tag">Tailwind CSS</span>
             </div>
             <div class="card-actions">
-              <a href="https://saadmwa.github.io/Moody_Journal/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-              <a href="https://github.com/SaadMwa/Moody_Journal" target="_blank" rel="noreferrer" class="card-btn card-btn-github">GitHub</a>
+              <a href="https://saadmwa.github.io/Moody_Journal/" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/Moody_Journal" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-github">GitHub</a>
             </div>
           </article>
 
@@ -757,7 +765,7 @@
                 <div class="contact-item-value">saadtariq.dev@gmail.com</div>
               </div>
             </a>
-            <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="contact-item">
+            <a href="https://github.com/SaadMwa" target="_blank" rel="noopener noreferrer" class="contact-item">
               <div class="contact-item-icon icon-github">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
               </div>
@@ -766,7 +774,7 @@
                 <div class="contact-item-value">github.com/SaadMwa</div>
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noreferrer" class="contact-item">
+            <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noopener noreferrer" class="contact-item">
               <div class="contact-item-icon icon-linkedin">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </div>
@@ -779,7 +787,7 @@
         </div>
 
         <div class="reveal reveal-delay-1">
-          <form class="contact-form" id="contactForm">
+          <form class="contact-form" id="contactForm" novalidate>
             <div class="form-field">
               <label for="name">Your Name</label>
               <input type="text" id="name" name="name" placeholder="Engineering Manager / Recruiter" required />
@@ -796,7 +804,7 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Details regarding opportunity or project..." required></textarea>
             </div>
-            <div class="form-msg" id="formMsg"></div>
+            <div class="form-msg" id="formMsg" role="alert"></div>
             <button type="submit" class="form-submit" id="submitBtn">
               <span>Send Message</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
@@ -817,10 +825,10 @@
     </div>
     <span class="footer-copy">© 2026 Saad Tariq. All rights reserved.</span>
     <div class="footer-socials">
-      <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="footer-social" title="GitHub">
+      <a href="https://github.com/SaadMwa" target="_blank" rel="noopener noreferrer" class="footer-social" title="GitHub">
         <svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
       </a>
-      <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noreferrer" class="footer-social" title="LinkedIn">
+      <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noopener noreferrer" class="footer-social" title="LinkedIn">
         <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
       <a href="mailto:saadtariq.dev@gmail.com" class="footer-social" title="Email">

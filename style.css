@@ -31,7 +31,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
 }
 
 body {
@@ -41,6 +40,12 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible Focus States */
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
 }
 
 /* ─── PRELOADER ─── */
@@ -193,6 +198,7 @@ nav {
   padding-bottom: 60px;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 90px;
 }
 #particle-canvas {
   position: absolute;
@@ -386,6 +392,7 @@ nav {
 /* ─── SECTION COMMON STYLES ─── */
 section {
   padding: 96px 0;
+  scroll-margin-top: 80px;
 }
 .container {
   max-width: 1240px;
@@ -571,6 +578,7 @@ section {
 .card-image-wrap img {
   width: 100%;
   height: 100%;
+  max-width: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -933,6 +941,11 @@ section {
   border-color: var(--cyan);
   box-shadow: 0 0 0 3px rgba(0, 242, 254, 0.1);
 }
+.form-field input.input-error,
+.form-field textarea.input-error {
+  border-color: #f87171;
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.15);
+}
 .form-field textarea {
   min-height: 120px;
   resize: vertical;
@@ -956,17 +969,29 @@ section {
   opacity: 0.9;
   transform: translateY(-1px);
 }
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
 .form-msg {
   padding: 12px 16px;
   border-radius: 10px;
   font-size: 0.875rem;
   display: none;
+  line-height: 1.5;
 }
 .form-msg.success {
   display: block;
   background: rgba(16, 185, 129, 0.15);
   border: 1px solid rgba(16, 185, 129, 0.3);
   color: #34d399;
+}
+.form-msg.error {
+  display: block;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
 }
 
 /* ─── FOOTER ─── */
@@ -1033,6 +1058,15 @@ footer {
 }
 .reveal-delay-1 { transition-delay: 0.1s; }
 
+/* Reduced Motion & Animation Robustness Fallback */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /* ─── RESPONSIVE DESIGN ─── */
 @media (max-width: 1024px) {
   .credibility-grid {
@@ -1077,8 +1111,11 @@ footer {
   .spec-item.spec-highlight {
     grid-column: span 1;
   }
-  .hero-buttons {
+  .hero-primary-cta {
     flex-direction: column;
+  }
+  .btn {
+    width: 100%;
   }
 }
 
