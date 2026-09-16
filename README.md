@@ -1,50 +1,47 @@
-# Saad Tariq – Full Stack Developer Portfolio
+# Saad Tariq — Full-Stack Software Engineer Portfolio
 
-![Portfolio Preview](images/client-manager.png)
+## 🌐 Deployed Canonical Portfolio
+[https://saad-portfolio-sigma.vercel.app/](https://saad-portfolio-sigma.vercel.app/)
 
-## 🌐 Live Demo
-https://saad-portfolio-sigma.vercel.app/
+## 📖 Positioning & Overview
+Production engineering portfolio for **Saad Tariq**, Full-Stack Software Engineer specializing in full-stack SaaS products, secure backend systems, real-time applications, and practical AI integrations.
 
-## 📖 About
+## 💼 Professional Experience
+- **AlgoHub** — Full-Stack Developer (*July 2026 – Present*)
+- **Fingerprint** — Software Engineer (*June 2026 – July 2026*)
 
-My personal developer portfolio showcasing my work as a Full Stack Developer. Built with pure HTML, CSS, and JavaScript – no frameworks, just clean, performant code.
+## 🚀 Featured Flagship Projects
+1. **VidaAI — AI Assessment Creator** (*Independent*)
+   - BullMQ + Redis background worker, WebSockets real-time progress, Gemini API prompt engineering.
+2. **AI-Powered Store Management System** (*Professional*)
+   - Production SaaS with natural language command parser executing verified database CRUD operations.
+3. **University CMS and Website** (*Client Work*)
+   - Static-to-dynamic platform migration with Next.js frontend, Express API backend, MySQL database, and CMS dashboard.
+4. **ConnectHub — Video Calling Platform** (*Independent*)
+   - WebRTC peer-to-peer streaming, Socket.io signaling, Zod schema validation, JWT refresh-token rotation.
+5. **Client Manager** (*Professional*)
+   - MERN stack freelancer tracker with AI financial insights, server-side pagination, and analytics dashboards.
+6. **SyncNotes** (*Independent*)
+   - Offline-first web notes application powered by IndexedDB local storage and automatic cloud synchronization.
 
-## 🛠️ Tech Stack
+### Additional Projects
+- **FairShare** — Bill-splitting and group expense calculator.
+- **Moody Journal** — Emotion tracking journal with visual entry analytics.
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Structure & semantics |
-| CSS3 | Styling, animations, gradients |
-| JavaScript | Particle canvas, scroll effects, form handling |
-| Vercel | Hosting & deployment |
-| Formspree | Contact form backend |
+## 🛠️ Structured Skills
+- **Frontend**: React, Next.js, TypeScript, JavaScript, Tailwind CSS, Context API
+- **Backend**: Node.js, Express.js, REST APIs, JWT Authentication, WebSockets, Socket.io, WebRTC, Zod
+- **Databases & Processing**: PostgreSQL, MongoDB, MySQL, Redis, BullMQ, IndexedDB
+- **DevOps & Testing**: Docker, Docker Compose, Git, GitHub Actions, Vercel, Jest, Unit Testing, Integration Testing
+- **Additional Languages**: Python, C, C++
 
-## 📁 Project Structure
+## 📁 Repository Structure
+```
 saad-portfolio/
-├── index.html # Main HTML file
-├── index.css # All styles (dark theme, cyberpunk)
-├── script.js # Particle canvas, scroll reveal, form handler
-├── images/ # Project screenshots
-│ ├── client-manager.png
-│ ├── syncnotes.png
-│ ├── fairshare.png
-│ └── moody-journal.png
-└── README.md # This file
-## 🎨 Design Features
-
-- **Dark theme** with cyan (#00ffff) and purple (#9933ff) accents
-- **Particle background** with connecting particle lines
-- **Glowing orb effects** for visual depth
-- **Smooth scroll animations** (scroll reveal on sections)
-- **Fully responsive** – works on all devices
-- **Accessibility friendly** – semantic HTML, keyboard navigation
-
-## 📱 Featured Projects
-
-| Project | Tech Stack | Live Demo |
-|---------|------------|-----------|
-| **Client Manager** | MERN, AI Insights, MongoDB, Pagination, Charts | [Live](https://client-manager-frontend-vwyz.vercel.app) |
-| **SyncNotes** | React, TypeScript, IndexedDB, Tailwind | [Live](https://syncnotes-omega.vercel.app) |
-| **FairShare** | HTML, CSS, JavaScript | [Live](https://saadmwa.github.io/bill-splitter-webapp-saad/) |
-| **Moody Journal** | React, Tailwind | [Live](https://saadmwa.github.io/Moody_Journal/) |
-| **AI SaaS Business** | MERN, Gemini API | Coming Soon |
+├── index.html            # Semantic HTML5 portfolio markup & specs
+├── style.css             # High-contrast theme, spec grids, timeline, & responsive styles
+├── script.js             # Particles canvas, scroll reveal, & contact mail dispatching
+├── Saad-Tariq-Resume.pdf # Executable/downloadable PDF resume file
+├── images/               # Flagship & project visual proof assets
+└── README.md             # Project documentation
+```

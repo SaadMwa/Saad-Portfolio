@@ -1,0 +1,46 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /MediaBox [0 0 612 792] /Contents 6 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+6 0 obj << /Length 1200 >>
+stream
+BT
+/F1 22 Tf 50 740 Td (Saad Tariq) Tj
+/F2 11 Tf 0 -20 Td (Full-Stack Software Engineer | saadtariq.dev@gmail.com | github.com/SaadMwa) Tj
+0 -30 Td /F1 14 Tf (PROFESSIONAL EXPERIENCE) Tj
+0 -20 Td /F1 11 Tf (Full-Stack Developer - AlgoHub) Tj /F2 10 Tf 250 0 Td (July 2026 - Present) Tj
+-250 -15 Td (Contributing across frontend, backend, database integration, and architecture decisions) Tj
+0 -12 Td (for client and hackathon projects using React, Next.js, Node.js, and Express.) Tj
+0 -25 Td /F1 11 Tf (Software Engineer - Fingerprint) Tj /F2 10 Tf 250 0 Td (June 2026 - July 2026) Tj
+-250 -15 Td (Delivered production features using React, Node.js, TypeScript, and PostgreSQL. Extended REST APIs,) Tj
+0 -12 Td (wrote unit and integration tests, and contributed to Docker and GitHub Actions workflows.) Tj
+0 -30 Td /F1 14 Tf (FEATURED PROJECTS) Tj
+0 -20 Td /F1 11 Tf (VidaAI - AI Assessment Creator) Tj
+0 -14 Td /F2 10 Tf (BullMQ + Redis background queue, WebSocket real-time progress, Gemini API prompt engineering.) Tj
+0 -20 Td /F1 11 Tf (AI-Powered Store Management System) Tj
+0 -14 Td /F2 10 Tf (Production-grade SaaS platform with natural language store command parsing & JWT session auth.) Tj
+0 -20 Td /F1 11 Tf (University CMS and Website) Tj
+0 -14 Td /F2 10 Tf (Static-to-dynamic full-stack conversion with Next.js frontend, Express API, MySQL & CMS dashboard.) Tj
+0 -30 Td /F1 14 Tf (TECHNICAL SKILLS) Tj
+0 -20 Td /F2 10 Tf (Frontend: React, Next.js, TypeScript, JavaScript, Tailwind CSS, Context API) Tj
+0 -15 Td (Backend: Node.js, Express.js, REST APIs, JWT Auth, WebSockets, Socket.io, WebRTC, Zod) Tj
+0 -15 Td (Databases: PostgreSQL, MongoDB, MySQL, Redis, BullMQ, IndexedDB) Tj
+0 -15 Td (DevOps & Testing: Docker, Docker Compose, Git, GitHub Actions, Vercel, Jest) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000261 00000 n 
+0000000332 00000 n 
+0000000398 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+1650
+%%EOF

@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saad Tariq - Full Stack Developer</title>
+  <title>Saad Tariq — Full-Stack Software Engineer</title>
+  <meta name="description" content="Portfolio of Saad Tariq, Full-Stack Software Engineer specializing in SaaS applications, secure backend systems, real-time applications, and practical AI integrations." />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Saad Tariq — Full-Stack Software Engineer" />
+  <meta property="og:description" content="I build full-stack SaaS products, secure backend systems, real-time applications, and practical AI integrations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://saad-portfolio-sigma.vercel.app/" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-   
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- PRELOADER -->
-<div id="preloader" onclick="dismissPreloader()">
+<div id="preloader" onclick="dismissPreloader()" title="Click to skip">
   <div class="preloader-ring">
     <span class="preloader-text">ST</span>
   </div>
@@ -22,345 +30,792 @@
 <!-- NAVBAR -->
 <nav>
   <div class="nav-inner">
-    <a href="#hero" class="nav-brand">Saad Tariq</a>
+    <a href="#hero" class="nav-brand">
+      <span class="brand-accent">&lt;</span>Saad Tariq<span class="brand-accent"> /&gt;</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="nav-hire">Hire Me</a>
-    <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">☰</button>
+    <div class="nav-actions">
+      <a href="#contact" class="nav-hire">Hire Me</a>
+      <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
   </div>
   <div class="nav-mobile-menu" id="mobileMenu">
     <a href="#hero" onclick="closeMobileMenu()">Home</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
     <a href="#projects" onclick="closeMobileMenu()">Projects</a>
     <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
     <a href="#contact" onclick="closeMobileMenu()">Contact</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <canvas id="particle-canvas"></canvas>
-  <div class="hero-glow-1"></div>
-  <div class="hero-glow-2"></div>
-  <div class="hero-content">
-    <div class="hero-badge">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--cyan)"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-      System Online
-      <span class="hero-badge-dot"></span>
-    </div>
-    <h1 class="hero-name">Saad Tariq</h1>
-    <h2 class="hero-title">Full Stack Developer</h2>
-    <p class="hero-location">Mardan, Pakistan</p>
-    <p class="hero-tagline">
-      Building full stack apps with AI insights, pagination, analytics, and offline-first architecture.
-      I engineer precise, performant systems that solve real problems.
-    </p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn btn-primary">
-        View Projects
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </a>
-      <a href="#contact" class="btn btn-outline">Contact Me</a>
-    </div>
-    <div class="hero-socials">
-      <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="social-link">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noreferrer" class="social-link">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        LinkedIn
-      </a>
-      <a href="mailto:saadkhanmrd33@gmail.com" class="social-link">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-        Email
-      </a>
-    </div>
-  </div>
-</section>
+<main>
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Available for Full-Stack & Backend Engineering Roles
+      </div>
+      <h1 class="hero-name">Saad Tariq</h1>
+      <h2 class="hero-title">Full-Stack Software Engineer</h2>
+      <p class="hero-tagline">
+        I build full-stack SaaS products, secure backend systems, real-time applications, and practical AI integrations using React, Next.js, Node.js, TypeScript, and modern databases.
+      </p>
 
-<!-- PROJECTS -->
-<section id="projects" class="section-divider">
-  <div class="container">
-    <div class="section-header reveal">
-      <h2 class="section-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-        Projects
-      </h2>
-      <div class="section-bar"></div>
-    </div>
-
-    <div class="projects-grid">
-      <article class="project-card card-flagship">
-        <div class="card-image" style="background: linear-gradient(135deg, rgba(0,255,255,0.12), rgba(153,51,255,0.12));">
-          <img src="./images/cleint.PNG" alt="Client Manager analytics dashboard" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Client Manager</h3>
-          <div class="card-tags">
-            <span class="tag">MERN</span>
-            <span class="tag">jwt-authentication</span>
-            <span class="tag">AI Insights</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">Pagination</span>
-            <span class="tag">Charts</span>
-          </div>
-          <p class="card-desc">Full stack freelancer client tracker with AI-powered insights, pagination for large datasets, analytics dashboard, and data visualization.</p>
-          <div class="card-actions">
-            <a href="https://client-manager-frontend-vwyz.vercel.app" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-            <a href="https://github.com/SaadMwa/ClientManager-frontend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-              GitHub Frontend
-            </a>
-            <a href="https://github.com/SaadMwa/ClientManager-Backend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-              GitHub Backend
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card card-flagship">
-        <div class="card-image" style="background: linear-gradient(135deg, rgba(0,255,255,0.12), rgba(153,51,255,0.12));">
-          <img src="./images/aisaas.PNG" alt="AI-powered store management analytics dashboard" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">AI-Powered Store Management System</h3>
-          <div class="card-tags">
-            <span class="tag">jwt-authentication</span>
-            <span class="tag">AI Insights</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">Gemini API</span>
-            <span class="tag">ai-integration</span>
-            <span class="tag">ai-assistant</span>
-            <span class="tag">store-management</span>
-          </div>
-          <p class="card-desc">A production-grade SaaS platform where store owners manage inventory, customers, and sales using natural language. The AI assistant understands commands like 'add 5 chairs at $50 each' and executes CRUD operations with 3-second response time.</p>
-          <div class="card-actions">
-            <a href="https://ai-saa-s-business-management-fronte.vercel.app/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-            <a href="https://github.com/SaadMwa/AI-SaaS-Business-Management-Frontend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-              GitHub Frontend
-            </a>
-            <a href="https://github.com/SaadMwa/AI-SaaS-Business-Management-Backend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-              GitHub Backend
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="card-image" style="background: linear-gradient(135deg, rgba(0,255,255,0.12), rgba(153,51,255,0.12));">
-      <img src="https://i.postimg.cc/rsdfHLk3/Capture.png" alt="image" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">VidaAI — AI Assessment Creator</h3>
-          <div class="card-tags">
-            <span class="tag">Nextjs</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Express</span>
-            <span class="tag">BullMQ</span>
-            <span class="tag">Redis</span>
-            <span class="tag">WebSockets</span>
-            <span class="tag">Gemini API</span>
-            <span class="tag">ai-integration</span>
-            <span class="tag">ai-assistant</span>
-            <span class="tag">Figma to Next.js</span>
-          </div>
-          <p class="card-desc">Engineered an AI-powered question paper generator for teachers — BullMQ + Redis background queue processes AI generation in ~15 seconds with WebSocket real-time progress updates, Gemini API prompt engineering, PDF export, and a pixel-perfect responsive UI matching Figma designs.</p>
-          <div class="card-actions">
-            <a href="https://drive.google.com/file/d/1Yo-t9cwfGlr9FIYwv1H_dPck1BhtAsFB/view" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-            <a href="https://github.com/SaadMwa/Vida_AI-" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-              GitHub
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="card-image" style="background: linear-gradient(135deg, rgba(0,255,255,0.12), rgba(153,51,255,0.12));">
-          <img src="./images/syncnotes.PNG" alt="SyncNotes screenshot" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">SyncNotes</h3>
-          <div class="card-tags">
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">IndexedDB</span>
-            <span class="tag">Tailwind</span>
-          </div>
-          <p class="card-desc">Offline-first notes app. Works without internet. Syncs automatically when back online.</p>
-          <div class="card-actions">
-            <a href="https://syncnotes-omega.vercel.app/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-            <a href="https://github.com/SaadMwa/syncnotes" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-              GitHub
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="card-image" style="background: linear-gradient(135deg, rgba(0,255,255,0.12), rgba(153,51,255,0.12));">
-          <img src="./images/bil.PNG" alt="FairShare screenshot" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">FairShare</h3>
-          <div class="card-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <p class="card-desc">A bill-splitting and expense sharing tool — easily split costs fairly between friends and groups.</p>
-          <div class="card-actions">
-            <a href="https://saadmwa.github.io/bill-splitter-webapp-saad/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-            <a href="https://github.com/SaadMwa/bill-splitter-webapp-saad.git" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-              GitHub
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="card-image" style="background: linear-gradient(135deg, rgba(0,255,255,0.12), rgba(153,51,255,0.12));">
-          <img src="./images/moddy journal.PNG" alt="Moody Journal screenshot" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Moody Journal</h3>
-          <div class="card-tags">
-            <span class="tag">React</span>
-            <span class="tag">Tailwind</span>
-          </div>
-          <p class="card-desc">Beautiful journal app for tracking moods and emotions with insightful visualizations.</p>
-          <div class="card-actions">
-            <a href="https://saadmwa.github.io/Moody_Journal/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
-            <a href="https://github.com/SaadMwa/Moody_Journal" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
-              GitHub
-            </a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section-divider">
-  <div class="container">
-    <div class="section-header reveal">
-      <h2 class="section-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93l-1.41 1.41M4.93 19.07l1.41-1.41M19.07 19.07l-1.41-1.41M4.93 4.93l1.41 1.41M2 12H4m16 0h2M12 2v2m0 16v2"></path></svg>
-        Tech Stack
-      </h2>
-      <div class="section-bar"></div>
-    </div>
-    <div class="skills-grid reveal">
-      <span class="skill-tag">JavaScript</span>
-      <span class="skill-tag">Next.js</span>
-      <span class="skill-tag">React</span>
-      <span class="skill-tag">Tailwind CSS</span>
-      <span class="skill-tag">TypeScript</span>
-      <span class="skill-tag">Python</span>
-      <span class="skill-tag">Node.js</span>
-      <span class="skill-tag">Express.js</span>
-      <span class="skill-tag">REST APIs</span>
-      <span class="skill-tag">bullMQ</span>
-      <span class="skill-tag">Redis</span>
-      <span class="skill-tag">C++</span>
-      <span class="skill-tag">Object Oriented Programming</span>
-      <span class="skill-tag">C</span>
-      <span class="skill-tag">MySQL</span>
-      <span class="skill-tag">MongoDB</span>
-      <span class="skill-tag">PostgreSQL</span>
-      <span class="skill-tag">SupaBase</span>
-      <span class="skill-tag">ERD</span>
-      <span class="skill-tag">IndexedDB</span>
-      <span class="skill-tag">Git</span>
-      <span class="skill-tag">Vercel</span>
-      
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section-divider">
-  <div class="container">
-    <div class="section-header reveal">
-      <h2 class="section-title">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-        Get in Touch
-      </h2>
-      <div class="section-bar"></div>
-    </div>
-    <div class="contact-grid">
-      <div class="reveal">
-        <div class="contact-info">
-          <h3>Let's build something great together</h3>
-          <p>I'm open to freelance projects, full-time roles, and collaborations.</p>
-        </div>
-        <div class="contact-items">
-          <a href="mailto:saadkhanmrd33@gmail.com" class="contact-item">
-            <div class="contact-item-icon icon-email">📧</div>
-            <div>
-              <div class="contact-item-label">Email</div>
-              <div class="contact-item-value">saadkhanmrd33@gmail.com</div>
-            </div>
+      <!-- Action Hierarchy -->
+      <div class="hero-action-group">
+        <div class="hero-primary-cta">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
-          <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="contact-item">
-            <div class="contact-item-icon icon-github">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            </div>
-            <div>
-              <div class="contact-item-label">GitHub</div>
-              <div class="contact-item-value">github.com/SaadMwa</div>
-            </div>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+        <div class="hero-supporting-actions">
+          <a href="./Saad-Tariq-Resume.pdf" download="Saad-Tariq-Resume.pdf" class="btn-action" title="Download Resume">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Resume</span>
           </a>
-          <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noreferrer" class="contact-item">
-            <div class="contact-item-icon icon-linkedin">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </div>
-            <div>
-              <div class="contact-item-label">LinkedIn</div>
-              <div class="contact-item-value">saad-khan-ab7827336</div>
-            </div>
+          <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="btn-action" title="GitHub Profile">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noreferrer" class="btn-action" title="LinkedIn Profile">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="reveal reveal-delay-1">
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="form-field">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" required />
+  <!-- CREDIBILITY STRIP -->
+  <section id="credibility" class="credibility-section">
+    <div class="container">
+      <div class="credibility-grid reveal">
+        <div class="cred-card">
+          <div class="cred-icon">⚡</div>
+          <div class="cred-content">
+            <h4>Production Development</h4>
+            <p>Extended REST APIs, PostgreSQL schemas, and containerized Docker CI workflows.</p>
           </div>
-          <div class="form-field">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="cred-card">
+          <div class="cred-icon">💼</div>
+          <div class="cred-content">
+            <h4>Client CMS Platforms</h4>
+            <p>Static-to-dynamic platform migration with admin dashboards & database integration.</p>
           </div>
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <div class="cred-card">
+          <div class="cred-icon">🤖</div>
+          <div class="cred-content">
+            <h4>Practical AI Integrations</h4>
+            <p>Gemini API prompt engineering, tool calling & structured natural language processing.</p>
           </div>
-          <div class="form-msg" id="formMsg"></div>
-          <button type="submit" class="form-submit" id="submitBtn">Send Message ✉️</button>
-        </form>
+        </div>
+        <div class="cred-card">
+          <div class="cred-icon">📡</div>
+          <div class="cred-content">
+            <h4>Real-Time & Offline Systems</h4>
+            <p>WebSockets, WebRTC signaling, BullMQ background queues & IndexedDB offline sync.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <section id="experience" class="section-divider">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">WORK HISTORY</div>
+        <h2 class="section-title">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          Professional Experience
+        </h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="timeline reveal">
+        <!-- Experience 01 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Full-Stack Developer</h3>
+                <h4 class="company-name">AlgoHub</h4>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">July 2026 – Present</span>
+                <span class="badge badge-prof">PROFESSIONAL</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Contributing across frontend, backend, database integration, and architecture decisions for client and hackathon projects using React, Next.js, Node.js, and Express.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Full-Stack Development</span>
+              <span class="tag">API Work</span>
+              <span class="tag">Frontend Implementation</span>
+              <span class="tag">Backend Development</span>
+              <span class="tag">Database Integration</span>
+              <span class="tag">Architecture Decisions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 02 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Software Engineer</h3>
+                <h4 class="company-name">Fingerprint</h4>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">June 2026 – July 2026</span>
+                <span class="badge badge-prof">PROFESSIONAL</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Delivered production features using React, Node.js, TypeScript, and PostgreSQL. Extended REST APIs, wrote unit and integration tests, and contributed to Docker and GitHub Actions workflows.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Production Features</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Testing (Jest)</span>
+              <span class="tag">Docker</span>
+              <span class="tag">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-divider">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">PORTFOLIO & PROOF</div>
+        <h2 class="section-title">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          Featured Projects
+        </h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <!-- Flagship Projects Stack -->
+      <div class="projects-featured-grid">
+        
+        <!-- PROJECT 1: VidaAI -->
+        <article class="project-card card-flagship reveal">
+          <div class="card-image-wrap">
+            <img src="https://i.postimg.cc/rsdfHLk3/Capture.png" alt="VidaAI AI Assessment Creator screenshot" loading="lazy">
+            <div class="card-badge-overlay">
+              <span class="badge badge-indep">INDEPENDENT</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">VidaAI — AI Assessment Creator</h3>
+            <p class="card-summary">Engineered an AI-powered question paper generator for teachers featuring background queue execution, real-time socket progress, and Gemini API prompt pipelines.</p>
+
+            <div class="card-spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">PROBLEM</span>
+                <span class="spec-value">Teachers spend hours manually creating structured exam papers and question banks.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SOLUTION</span>
+                <span class="spec-value">Asynchronous AI generator processing paper creation with real-time feedback.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">MY CONTRIBUTION</span>
+                <span class="spec-value">Full-stack architecture: Next.js frontend, Gemini API prompt engineering, BullMQ background job queue, WebSocket state push, and PDF export renderer.</span>
+              </div>
+              <div class="spec-item spec-highlight">
+                <span class="spec-label">ENGINEERING HIGHLIGHT</span>
+                <span class="spec-value">BullMQ + Redis background worker completes paper generation in ~15s without blocking HTTP threads, broadcasting live progress via WebSockets.</span>
+              </div>
+            </div>
+
+            <div class="card-tech-list">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Express</span>
+              <span class="tag">BullMQ</span>
+              <span class="tag">Redis</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Gemini API</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://drive.google.com/file/d/1Yo-t9cwfGlr9FIYwv1H_dPck1BhtAsFB/view" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/Vida_AI-" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: AI-Powered Store Management System -->
+        <article class="project-card card-flagship reveal">
+          <div class="card-image-wrap">
+            <img src="./images/aisaas.PNG" alt="AI-Powered Store Management System dashboard screenshot" loading="lazy">
+            <div class="card-badge-overlay">
+              <span class="badge badge-prof">PROFESSIONAL</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">AI-Powered Store Management System</h3>
+            <p class="card-summary">A production-grade SaaS platform where store owners manage inventory, customers, and sales via natural language command execution.</p>
+
+            <div class="card-spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">PROBLEM</span>
+                <span class="spec-value">Small business owners waste time navigating dense multi-tab software for routine updates.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SOLUTION</span>
+                <span class="spec-value">Full-stack SaaS suite integrating a natural language AI assistant for automated operations.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">MY CONTRIBUTION</span>
+                <span class="spec-value">Engineered React frontend dashboard, Node/Express APIs, JWT authentication, MongoDB schemas, and Gemini API integration.</span>
+              </div>
+              <div class="spec-item spec-highlight">
+                <span class="spec-label">ENGINEERING HIGHLIGHT</span>
+                <span class="spec-value">Natural language command parser translating commands ('add 5 chairs at $50') into verified CRUD database operations within ~3 seconds.</span>
+              </div>
+            </div>
+
+            <div class="card-tech-list">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">JWT Auth</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://ai-saa-s-business-management-fronte.vercel.app/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/AI-SaaS-Business-Management-Frontend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                Frontend Repo
+              </a>
+              <a href="https://github.com/SaadMwa/AI-SaaS-Business-Management-Backend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                Backend Repo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: University CMS and Website -->
+        <article class="project-card card-flagship reveal">
+          <div class="card-image-wrap img-placeholder-code">
+            <div class="card-code-preview">
+              <span class="code-line"><span class="c-keyword">const</span> cmsApp = <span class="c-func">express</span>();</span>
+              <span class="code-line">cmsApp.<span class="c-func">use</span>(<span class="c-str">'/api/announcements'</span>, announcementRoutes);</span>
+              <span class="code-line">cmsApp.<span class="c-func">use</span>(<span class="c-str">'/api/faculty'</span>, facultyRoutes);</span>
+              <span class="code-line"><span class="c-keyword">const</span> db = <span class="c-keyword">await</span> mysql.<span class="c-func">createPool</span>(config);</span>
+            </div>
+            <div class="card-badge-overlay">
+              <span class="badge badge-client">CLIENT WORK</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">University CMS and Website</h3>
+            <p class="card-summary">Converted a static university website into a dynamic full-stack platform with a central administrative CMS dashboard.</p>
+
+            <div class="card-spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">PROBLEM</span>
+                <span class="spec-value">Legacy static web pages lacked dynamic content control, announcement updates, and faculty directories.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SOLUTION</span>
+                <span class="spec-value">Full-stack platform overhaul featuring Next.js frontend, Express API backend, MySQL database, and CMS panel.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">MY CONTRIBUTION</span>
+                <span class="spec-value">Architected Next.js page structure, Express REST endpoints, MySQL relational schema design, and role-based admin management dashboard.</span>
+              </div>
+              <div class="spec-item spec-highlight">
+                <span class="spec-label">ENGINEERING HIGHLIGHT</span>
+                <span class="spec-value">Static-to-dynamic migration replacing hardcoded files with relational database models and secure CMS publishing flows.</span>
+              </div>
+            </div>
+
+            <div class="card-tech-list">
+              <span class="tag">Next.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">CMS Architecture</span>
+            </div>
+
+            <div class="card-actions">
+              <span class="card-note-badge">Client Project (Internal Delivery)</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: ConnectHub -->
+        <article class="project-card card-flagship reveal">
+          <div class="card-image-wrap img-placeholder-code">
+            <div class="card-code-preview">
+              <span class="code-line"><span class="c-keyword">const</span> peer = <span class="c-keyword">new</span> <span class="c-type">RTCPeerConnection</span>(rtcConfig);</span>
+              <span class="code-line">socket.<span class="c-func">on</span>(<span class="c-str">'signal'</span>, <span class="c-keyword">async</span> (data) =&gt; { ... });</span>
+              <span class="code-line"><span class="c-keyword">const</span> payload = ZodUser.<span class="c-func">parse</span>(req.body);</span>
+            </div>
+            <div class="card-badge-overlay">
+              <span class="badge badge-indep">INDEPENDENT</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">ConnectHub — Video Calling Platform</h3>
+            <p class="card-summary">Real-time peer-to-peer video conferencing platform with WebSockets, WebRTC mesh signaling, and secure token session rotation.</p>
+
+            <div class="card-spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">PROBLEM</span>
+                <span class="spec-value">Standard video web applications suffer from signaling latency and insecure session state management.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SOLUTION</span>
+                <span class="spec-value">High-performance WebRTC video streaming platform backed by Socket.io signaling and strict schema validation.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">MY CONTRIBUTION</span>
+                <span class="spec-value">Built WebRTC peer connection protocol, Socket.io signaling server, Zod payload validation layer, and JWT refresh-token rotation.</span>
+              </div>
+              <div class="spec-item spec-highlight">
+                <span class="spec-label">ENGINEERING HIGHLIGHT</span>
+                <span class="spec-value">WebRTC P2P signaling with Socket.io fallback, type-safe Zod runtime checks, and JWT token rotation for long-lived secure calls.</span>
+              </div>
+            </div>
+
+            <div class="card-tech-list">
+              <span class="tag">WebRTC</span>
+              <span class="tag">Socket.io</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Zod</span>
+              <span class="tag">JWT Auth</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                GitHub Profile
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: Client Manager -->
+        <article class="project-card card-flagship reveal">
+          <div class="card-image-wrap">
+            <img src="./images/cleint.PNG" alt="Client Manager analytics dashboard screenshot" loading="lazy">
+            <div class="card-badge-overlay">
+              <span class="badge badge-prof">PROFESSIONAL</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Client Manager</h3>
+            <p class="card-summary">Full-stack client and project management suite featuring AI financial insights, paginated query handling, and analytics charts.</p>
+
+            <div class="card-spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">PROBLEM</span>
+                <span class="spec-value">Freelancers and small teams lack centralized tracking for client invoicing, status, and revenue analytics.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SOLUTION</span>
+                <span class="spec-value">Integrated MERN application with automated financial analytics and responsive client dashboards.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">MY CONTRIBUTION</span>
+                <span class="spec-value">Developed full MERN architecture, JWT authentication layer, server-side pagination, and Chart.js reporting.</span>
+              </div>
+              <div class="spec-item spec-highlight">
+                <span class="spec-label">ENGINEERING HIGHLIGHT</span>
+                <span class="spec-value">Optimized MongoDB aggregation pipelines and paginated dataset queries for fast dashboard load times.</span>
+              </div>
+            </div>
+
+            <div class="card-tech-list">
+              <span class="tag">MERN Stack</span>
+              <span class="tag">JWT Auth</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">AI Insights</span>
+              <span class="tag">Pagination</span>
+              <span class="tag">Charts</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://client-manager-frontend-vwyz.vercel.app" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/ClientManager-frontend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                Frontend Repo
+              </a>
+              <a href="https://github.com/SaadMwa/ClientManager-Backend" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                Backend Repo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 6: SyncNotes -->
+        <article class="project-card card-flagship reveal">
+          <div class="card-image-wrap">
+            <img src="./images/syncnotes.PNG" alt="SyncNotes offline notes app screenshot" loading="lazy">
+            <div class="card-badge-overlay">
+              <span class="badge badge-indep">INDEPENDENT</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">SyncNotes</h3>
+            <p class="card-summary">Offline-first web notes application with local browser database persistence and automatic cloud synchronization on reconnection.</p>
+
+            <div class="card-spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">PROBLEM</span>
+                <span class="spec-value">Web note applications lose state and become unresponsive during offline network drops.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SOLUTION</span>
+                <span class="spec-value">Offline-first database architecture guaranteeing 100% functionality without active internet access.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">MY CONTRIBUTION</span>
+                <span class="spec-value">Architected local database layer using IndexedDB, connection status monitoring, and background sync queues.</span>
+              </div>
+              <div class="spec-item spec-highlight">
+                <span class="spec-label">ENGINEERING HIGHLIGHT</span>
+                <span class="spec-value">Client-side IndexedDB database layer for zero-latency local operations and automatic background reconciliation on network recovery.</span>
+              </div>
+            </div>
+
+            <div class="card-tech-list">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">IndexedDB</span>
+              <span class="tag">Tailwind CSS</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://syncnotes-omega.vercel.app/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/syncnotes" target="_blank" rel="noreferrer" class="card-btn card-btn-github">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path></svg>
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- ADDITIONAL PROJECTS SECTION -->
+      <div class="additional-projects-wrap reveal">
+        <h3 class="sub-section-title">Additional Engineering Projects</h3>
+        <div class="additional-grid">
+          
+          <!-- FairShare -->
+          <article class="project-card card-compact">
+            <div class="card-compact-header">
+              <div>
+                <h4 class="card-compact-title">FairShare</h4>
+                <span class="badge badge-indep">INDEPENDENT</span>
+              </div>
+            </div>
+            <p class="card-compact-desc">A bill-splitting and expense-sharing calculator designed to fairly allocate group costs and shared balances.</p>
+            <div class="card-tech-list">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://saadmwa.github.io/bill-splitter-webapp-saad/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/bill-splitter-webapp-saad.git" target="_blank" rel="noreferrer" class="card-btn card-btn-github">GitHub</a>
+            </div>
+          </article>
+
+          <!-- Moody Journal -->
+          <article class="project-card card-compact">
+            <div class="card-compact-header">
+              <div>
+                <h4 class="card-compact-title">Moody Journal</h4>
+                <span class="badge badge-indep">INDEPENDENT</span>
+              </div>
+            </div>
+            <p class="card-compact-desc">A mood tracking and emotional journal application with interactive entry trend visualizations.</p>
+            <div class="card-tech-list">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://saadmwa.github.io/Moody_Journal/" target="_blank" rel="noreferrer" class="card-btn card-btn-live">🌐 Live Demo</a>
+              <a href="https://github.com/SaadMwa/Moody_Journal" target="_blank" rel="noreferrer" class="card-btn card-btn-github">GitHub</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section-divider">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">TECHNICAL PROFICIENCY</div>
+        <h2 class="section-title">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          Structured Skills & Stack
+        </h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="skills-categories-grid reveal">
+        <!-- Frontend -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon">🎨</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">React</span>
+            <span class="skill-chip">Next.js</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">Tailwind CSS</span>
+            <span class="skill-chip">Context API</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon">⚙️</span>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Node.js</span>
+            <span class="skill-chip">Express.js</span>
+            <span class="skill-chip">REST APIs</span>
+            <span class="skill-chip">JWT Authentication</span>
+            <span class="skill-chip">WebSockets</span>
+            <span class="skill-chip">Socket.io</span>
+            <span class="skill-chip">WebRTC</span>
+            <span class="skill-chip">Zod</span>
+          </div>
+        </div>
+
+        <!-- Databases & Processing -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon">🗄️</span>
+            <h3>Databases & Processing</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">MongoDB</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">BullMQ</span>
+            <span class="skill-chip">IndexedDB</span>
+          </div>
+        </div>
+
+        <!-- DevOps & Testing -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon">🛠️</span>
+            <h3>DevOps & Testing</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">Docker Compose</span>
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">GitHub Actions</span>
+            <span class="skill-chip">Vercel</span>
+            <span class="skill-chip">Jest</span>
+            <span class="skill-chip">Unit Testing</span>
+            <span class="skill-chip">Integration Testing</span>
+          </div>
+        </div>
+
+        <!-- Additional Languages -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon">💻</span>
+            <h3>Additional Languages</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">C</span>
+            <span class="skill-chip">C++</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / ENGINEERING IDENTITY -->
+  <section id="about" class="section-divider">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">ENGINEERING IDENTITY</div>
+        <h2 class="section-title">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><user x="12" y="12" r="4"></user><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          About Saad
+        </h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="about-card reveal">
+        <div class="about-content">
+          <p class="about-paragraph">
+            I’m a full-stack software engineer focused on building real products across frontend, backend, databases, authentication, realtime systems, and practical AI integrations. I enjoy working beyond individual features — understanding architecture, debugging system behavior, and making engineering decisions that hold up outside localhost.
+          </p>
+          <div class="about-principles">
+            <div class="principle-item">
+              <span class="principle-num">01</span>
+              <div>
+                <h5>Evidence Over Claims</h5>
+                <p>Prioritizing verified system implementations, clean code, and working production proof.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <span class="principle-num">02</span>
+              <div>
+                <h5>End-to-End System Thinking</h5>
+                <p>Engineering frontend user experiences, secure API gateways, queue pipelines, and optimized database queries.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <span class="principle-num">03</span>
+              <div>
+                <h5>Production Discipline</h5>
+                <p>Writing typed code, unit/integration test suites, containerized workflows, and maintainable schemas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-divider">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">INITIATE CONVERSATION</div>
+        <h2 class="section-title">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Get In Touch
+        </h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-info">
+            <h3>Open to Serious Professional Conversations</h3>
+            <p>Available for full-stack software engineering roles, remote opportunities, technical collaborations, and select client projects.</p>
+          </div>
+          <div class="contact-items">
+            <a href="mailto:saadtariq.dev@gmail.com" class="contact-item">
+              <div class="contact-item-icon icon-email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Direct Email</div>
+                <div class="contact-item-value">saadtariq.dev@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="contact-item">
+              <div class="contact-item-icon icon-github">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">GitHub Profile</div>
+                <div class="contact-item-value">github.com/SaadMwa</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noreferrer" class="contact-item">
+              <div class="contact-item-icon icon-linkedin">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">LinkedIn Profile</div>
+                <div class="contact-item-value">linkedin.com/in/saad-tariq-ab7827336</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <form class="contact-form" id="contactForm">
+            <div class="form-field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Engineering Manager / Recruiter" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="email@company.com" required />
+            </div>
+            <div class="form-field">
+              <label for="subject">Opportunity / Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Full-Stack Engineer Role / Remote Project" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Details regarding opportunity or project..." required></textarea>
+            </div>
+            <div class="form-msg" id="formMsg"></div>
+            <button type="submit" class="form-submit" id="submitBtn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <span class="footer-brand">Saad Tariq</span>
-    <span class="footer-copy">© 2025 · Built with passion from Mardan, Pakistan</span>
+    <div class="footer-brand-wrap">
+      <span class="footer-brand">Saad Tariq</span>
+      <span class="footer-title">Full-Stack Software Engineer</span>
+    </div>
+    <span class="footer-copy">© 2026 Saad Tariq. All rights reserved.</span>
     <div class="footer-socials">
       <a href="https://github.com/SaadMwa" target="_blank" rel="noreferrer" class="footer-social" title="GitHub">
         <svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
@@ -368,12 +823,13 @@
       <a href="https://www.linkedin.com/in/saad-tariq-ab7827336/" target="_blank" rel="noreferrer" class="footer-social" title="LinkedIn">
         <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
-      <a href="mailto:saadkhanmrd33@gmail.com" class="footer-social" title="Email">
+      <a href="mailto:saadtariq.dev@gmail.com" class="footer-social" title="Email">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
       </a>
     </div>
   </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
- <script src="script.js"></script>
 </html>
