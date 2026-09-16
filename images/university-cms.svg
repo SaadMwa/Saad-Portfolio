@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="12"/>
+  
+  <!-- App Header / Navbar -->
+  <rect x="0" y="0" width="800" height="50" fill="#090d16" opacity="0.9"/>
+  <circle cx="25" cy="25" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="25" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="25" r="6" fill="#10b981"/>
+  <text x="95" y="30" fill="#94a3b8" font-family="sans-serif" font-size="13" font-weight="600">University CMS Portal — Admin Dashboard</text>
+  <rect x="680" y="15" width="90" height="20" rx="10" fill="url(#accentGrad)"/>
+  <text x="702" y="29" fill="#040810" font-family="sans-serif" font-size="10" font-weight="700">Admin Mode</text>
+
+  <!-- Sidebar -->
+  <rect x="20" y="70" width="180" height="360" rx="8" fill="#131c2e" stroke="rgba(255,255,255,0.08)"/>
+  <text x="40" y="100" fill="#00f2fe" font-family="sans-serif" font-size="12" font-weight="700">MANAGEMENT</text>
+  <rect x="35" y="115" width="150" height="30" rx="6" fill="rgba(0,242,254,0.15)"/>
+  <text x="50" y="135" fill="#00f2fe" font-family="sans-serif" font-size="12" font-weight="600">📢 Announcements</text>
+  <text x="50" y="175" fill="#94a3b8" font-family="sans-serif" font-size="12">👨‍🏫 Faculty Directory</text>
+  <text x="50" y="215" fill="#94a3b8" font-family="sans-serif" font-size="12">📚 Course Catalog</text>
+  <text x="50" y="255" fill="#94a3b8" font-family="sans-serif" font-size="12">🖼️ Media Library</text>
+  <text x="50" y="295" fill="#94a3b8" font-family="sans-serif" font-size="12">⚙️ System Settings</text>
+
+  <!-- Main Content Area -->
+  <rect x="220" y="70" width="560" height="360" rx="8" fill="#131c2e" stroke="rgba(255,255,255,0.08)"/>
+  <text x="240" y="105" fill="#f8fafc" font-family="sans-serif" font-size="16" font-weight="700">Institutional Content &amp; Announcements</text>
+  
+  <!-- Stats Row -->
+  <rect x="240" y="125" width="160" height="65" rx="8" fill="#0f172a" stroke="rgba(255,255,255,0.05)"/>
+  <text x="255" y="145" fill="#94a3b8" font-family="sans-serif" font-size="11">Total Announcements</text>
+  <text x="255" y="175" fill="#00f2fe" font-family="sans-serif" font-size="20" font-weight="800">142</text>
+
+  <rect x="420" y="125" width="160" height="65" rx="8" fill="#0f172a" stroke="rgba(255,255,255,0.05)"/>
+  <text x="435" y="145" fill="#94a3b8" font-family="sans-serif" font-size="11">Active Faculty Profiles</text>
+  <text x="435" y="175" fill="#6366f1" font-family="sans-serif" font-size="20" font-weight="800">86</text>
+
+  <rect x="600" y="125" width="160" height="65" rx="8" fill="#0f172a" stroke="rgba(255,255,255,0.05)"/>
+  <text x="615" y="145" fill="#94a3b8" font-family="sans-serif" font-size="11">Database Queries / s</text>
+  <text x="615" y="175" fill="#10b981" font-family="sans-serif" font-size="20" font-weight="800">0.02ms</text>
+
+  <!-- Content Table -->
+  <rect x="240" y="210" width="520" height="200" rx="8" fill="#0f172a" stroke="rgba(255,255,255,0.05)"/>
+  <rect x="240" y="210" width="520" height="30" fill="rgba(255,255,255,0.03)"/>
+  <text x="255" y="230" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="700">TITLE</text>
+  <text x="500" y="230" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="700">AUTHOR</text>
+  <text x="630" y="230" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="700">STATUS</text>
+
+  <!-- Row 1 -->
+  <text x="255" y="265" fill="#f8fafc" font-family="sans-serif" font-size="12">Fall 2026 Semester Examination Schedule</text>
+  <text x="500" y="265" fill="#94a3b8" font-family="sans-serif" font-size="12">Academic Registrar</text>
+  <rect x="630" y="252" width="60" height="18" rx="9" fill="rgba(16,185,129,0.2)"/>
+  <text x="642" y="265" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="700">Published</text>
+
+  <!-- Row 2 -->
+  <line x1="240" y1="280" x2="760" y2="280" stroke="rgba(255,255,255,0.05)"/>
+  <text x="255" y="305" fill="#f8fafc" font-family="sans-serif" font-size="12">Department of Computer Science Research Grants</text>
+  <text x="500" y="305" fill="#94a3b8" font-family="sans-serif" font-size="12">Dean Office</text>
+  <rect x="630" y="292" width="60" height="18" rx="9" fill="rgba(16,185,129,0.2)"/>
+  <text x="642" y="305" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="700">Published</text>
+
+  <!-- Row 3 -->
+  <line x1="240" y1="320" x2="760" y2="320" stroke="rgba(255,255,255,0.05)"/>
+  <text x="255" y="345" fill="#f8fafc" font-family="sans-serif" font-size="12">Faculty Seminar: Distributed Systems Architecture</text>
+  <text x="500" y="345" fill="#94a3b8" font-family="sans-serif" font-size="12">Dr. Tariq</text>
+  <rect x="630" y="332" width="60" height="18" rx="9" fill="rgba(245,158,11,0.2)"/>
+  <text x="645" y="345" fill="#fbbf24" font-family="sans-serif" font-size="10" font-weight="700">Draft</text>
+
+  <!-- Row 4 -->
+  <line x1="240" y1="360" x2="760" y2="360" stroke="rgba(255,255,255,0.05)"/>
+  <text x="255" y="385" fill="#f8fafc" font-family="sans-serif" font-size="12">Campus Network Upgrade Maintenance Notice</text>
+  <text x="500" y="385" fill="#94a3b8" font-family="sans-serif" font-size="12">IT Admin</text>
+  <rect x="630" y="372" width="60" height="18" rx="9" fill="rgba(16,185,129,0.2)"/>
+  <text x="642" y="385" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="700">Published</text>
+</svg>
