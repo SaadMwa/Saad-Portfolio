@@ -4,7 +4,7 @@
 [https://saad-portfolio-sigma.vercel.app/](https://saad-portfolio-sigma.vercel.app/)
 
 ## 📖 Positioning & Overview
-Production engineering portfolio for **Saad Tariq**, Full-Stack Software Engineer specializing in full-stack SaaS products, secure backend systems, real-time applications, and practical AI integrations.
+Engineering portfolio for **Saad Tariq**, Full-Stack Software Engineer specializing in full-stack SaaS products, secure backend systems, real-time applications, and practical AI integrations.
 
 ## 💼 Professional Experience
 - **AlgoHub** — Full-Stack Developer (*July 2026 – Present*)
@@ -13,16 +13,16 @@ Production engineering portfolio for **Saad Tariq**, Full-Stack Software Enginee
 ## 🚀 Featured Flagship Projects
 1. **VidaAI — AI Assessment Creator** (*Independent*)
    - BullMQ + Redis background worker, WebSockets real-time progress, Gemini API prompt engineering.
-2. **AI-Powered Store Management System** (*Professional*)
-   - Production SaaS with natural language command parser executing verified database CRUD operations.
+2. **AI-Powered Store Management System** (*Independent*)
+   - Full-stack SaaS with natural language command parser executing verified database CRUD operations.
 3. **University CMS and Website** (*Client Work*)
    - Static-to-dynamic platform migration with Next.js frontend, Express API backend, MySQL database, and CMS dashboard.
 4. **ConnectHub — Video Calling Platform** (*Independent*)
    - WebRTC peer-to-peer streaming, Socket.io signaling, Zod schema validation, JWT refresh-token rotation.
-5. **Client Manager** (*Professional*)
-   - MERN stack freelancer tracker with AI financial insights, server-side pagination, and analytics dashboards.
+5. **Client Manager** (*Independent*)
+   - Full-stack freelancer client tracker built with MERN stack, authentication, pagination, and Chart.js dashboards.
 6. **SyncNotes** (*Independent*)
-   - Offline-first web notes application powered by IndexedDB local storage and automatic cloud synchronization.
+   - An offline-first notes application using IndexedDB for local persistence, allowing users to create and manage notes without an active internet connection.
 
 ### Additional Projects
 - **FairShare** — Bill-splitting and group expense calculator.
